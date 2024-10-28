@@ -8,7 +8,7 @@ const landmarkDescription = document.getElementById('landmark-description');
 const placesList = document.getElementById('places-list');
 
 // API keys and endpoints
-const GOOGLE_API_KEY = 'YOUR_GOOGLE_API_KEY';
+const GOOGLE_API_KEY = 'AIzaSyA4Xo27wNyl5vJXm32137rlFa4VAcc7JJ4';
 const VISION_API_ENDPOINT = `https://vision.googleapis.com/v1/images:annotate?key=${GOOGLE_API_KEY}`;
 const WIKIPEDIA_API_ENDPOINT = 'https://en.wikipedia.org/w/api.php';
 
