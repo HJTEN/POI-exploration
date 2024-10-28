@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.O.I. Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>P.O.I. Explorer</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#nearby">Nearby Places</a>
+    </nav>
+    <main id="main-content">
+        <section id="home" class="active">
+            <h2>Welcome to P.O.I. Explorer</h2>
+            <button id="start-exploring">Start Exploring</button>
+        </section>
+        <section id="explore" class="hidden">
+            <video id="camera-feed" autoplay playsinline></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <div id="landmark-info">
+                <h2>Landmark Name</h2>
+                <p id="landmark-description"></p>
+            </div>
+        </section>
+        <section id="nearby" class="hidden">
+            <h2>Nearby Places</h2>
+            <ul id="places-list"></ul>
+        </section>
+    </main>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=places"></script>
+    <script src="script.js"></script>
+</body>
+</html>
